@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>釜山 6 天 5 夜自由行手冊</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Noto Sans TC', sans-serif; }
+        .timeline-line {
+            position: absolute;
+            left: 1rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #e5e7eb;
+            z-index: 0;
+        }
+        .timeline-item:last-child .timeline-line { display: none; }
+        
+        /* Hide scrollbar for nav */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 pb-20">
+
+    <!-- Header / Flight Info -->
+    <header class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white p-6 rounded-b-3xl shadow-lg relative z-10">
+        <h1 class="text-2xl font-bold mb-2">釜山 6 天 5 夜自由行</h1>
+        <p class="text-blue-100 text-sm mb-4">202X/03/11 - 03/16</p>
+        
+        <div class="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+            <div class="flex justify-between items-center mb-2">
+                <div class="text-center">
+                    <span class="block text-2xl font-bold">TPE</span>
+                    <span class="text-xs opacity-75">10:30</span>
+                </div>
+                <div class="flex flex-col items-center px-4">
+                    <i class="fa-solid fa-plane text-yellow-300"></i>
+                    <span class="text-xs mt-1">BR1194</span>
+                </div>
+                <div class="text-center">
+                    <span class="block text-2xl font-bold">PUS</span>
+                    <span class="text-xs opacity-75">13:45</span>
+                </div>
+            </div>
+            <div class="border-t border-white/20 my-2"></div>
+            <div class="flex justify-between items-center">
+                <div class="text-center">
+                    <span class="block text-2xl font-bold">PUS</span>
+                    <span class="text-xs opacity-75">15:45</span>
+                </div>
+                <div class="flex flex-col items-center px-4">
+                    <i class="fa-solid fa-plane text-yellow-300 transform rotate-180"></i>
+                    <span class="text-xs mt-1">BR1193</span>
+                </div>
+                <div class="text-center">
+                    <span class="block text-2xl font-bold">TPE</span>
+                    <span class="text-xs opacity-75">17:15</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-sm py-3 px-2 overflow-x-auto hide-scroll whitespace-nowrap border-b border-gray-100">
+        <div class="flex space-x-2 px-2">
+            <button onclick="scrollToDay('day1')" class="px-4 py-1.5 rounded-full bg-blue-100 text-blue-600 text-sm font-bold hover:bg-blue-600 hover:text-white transition">Day 1</button>
+            <button onclick="scrollToDay('day2')" class="px-4 py-1.5 rounded-full bg-gray-100 text-gray-600 text-sm font-bold hover:bg-blue-600 hover:text-white transition">Day 2</button>
+            <button onclick="scrollToDay('day3')" class="px-4 py-1.5 rounded-full bg-gray-100 text-gray-600 text-sm font-bold hover:bg-blue-600 hover:text-white transition">Day 3</button>
+            <button onclick="scrollToDay('day4')" class="px-4 py-1.5 rounded-full bg-gray-100 text-gray-600 text-sm font-bold hover:bg-blue-600 hover:text-white transition">Day 4</button>
+            <button onclick="scrollToDay('day5')" class="px-4 py-1.5 rounded-full bg-gray-100 text-gray-600 text-sm font-bold hover:bg-blue-600 hover:text-white transition">Day 5</button>
+            <button onclick="scrollToDay('day6')" class="px-4 py-1.5 rounded-full bg-gray-100 text-gray-600 text-sm font-bold hover:bg-blue-600 hover:text-white transition">Day 6</button>
+            <button onclick="scrollToDay('info')" class="px-4 py-1.5 rounded-full bg-amber-100 text-amber-700 text-sm font-bold hover:bg-amber-500 hover:text-white transition"><i class="fa-solid fa-hotel"></i> 住宿</button>
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-4 py-6">
+
+        <!-- Day 1 -->
+        <section id="day1" class="mb-12 scroll-mt-24">
+            <div class="flex items-center mb-6">
+                <div class="bg-blue-600 text-white font-bold w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-lg shadow-blue-200">D1</div>
+                <div class="ml-4">
+                    <h2 class="text-xl font-bold text-slate-800">抵達與放鬆</h2>
+                    <p class="text-slate-500 text-sm">3/11 (二) • 海雲台、Spa Land</p>
+                </div>
+            </div>
+
+            <div class="space-y-0 relative">
+                <!-- Timeline Item -->
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-blue-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-blue-600 font-bold text-sm">13:45</span>
+                            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">機場</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-1">抵達釜山金海機場</h3>
+                        <p class="text-slate-500 text-sm mb-2">出關後搭乘 Uber 前往海雲台飯店。</p>
+                        <div class="bg-yellow-50 text-yellow-800 text-xs p-2 rounded border border-yellow-100">
+                            <i class="fa-solid fa-taxi mr-1"></i> Uber 預估約 30,000 韓元 (約 50-60 分鐘)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-purple-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-purple-600 font-bold text-sm block mb-1">15:30 • 入住</span>
+                        <h3 class="font-bold text-lg">海雲台中心酒店</h3>
+                        <p class="text-slate-500 text-sm">Haeundae Centum Hotel</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-cyan-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-cyan-600 font-bold text-sm block mb-1">16:30 • 體驗</span>
+                        <h3 class="font-bold text-lg mb-2">Spa Land 汗蒸幕</h3>
+                        <p class="text-slate-600 text-sm mb-3">五星級汗蒸幕，享受戶外足湯與桑拿。</p>
+                        <div class="text-xs text-slate-400">📍 新世界百貨 Centum City 店內</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative pl-8">
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-orange-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-orange-600 font-bold text-sm block mb-1">20:00 • 晚餐</span>
+                        <h3 class="font-bold text-lg mb-2">海雲台市場</h3>
+                        <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                            <li>推薦：尚國家 (辣炒年糕/天婦羅)</li>
+                            <li>特色：盲鰻 (꼼장어)</li>
+                            <li>飯後建議沿海雲台沙灘散步回飯店</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 2 -->
+        <section id="day2" class="mb-12 scroll-mt-24">
+            <div class="flex items-center mb-6">
+                <div class="bg-blue-600 text-white font-bold w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-lg shadow-blue-200">D2</div>
+                <div class="ml-4">
+                    <h2 class="text-xl font-bold text-slate-800">東釜山海岸 & Outlet</h2>
+                    <p class="text-slate-500 text-sm">3/12 (三) • 膠囊列車、滑車、購物</p>
+                </div>
+            </div>
+
+            <div class="space-y-0 relative">
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-orange-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-orange-600 font-bold text-sm block mb-1">09:30 • 早餐</span>
+                        <h3 class="font-bold text-lg">元祖鮑魚粥</h3>
+                        <p class="text-slate-500 text-sm">海雲台本店 (원조전복죽)</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-rose-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 border-l-4 border-l-rose-400">
+                        <div class="flex justify-between">
+                            <span class="text-rose-600 font-bold text-sm block mb-1">10:30 • 重點</span>
+                            <span class="bg-rose-100 text-rose-600 text-xs px-2 py-0.5 rounded-full h-fit">需預約</span>
+                        </div>
+                        <h3 class="font-bold text-lg">海雲台藍線公園 (尾浦站)</h3>
+                        <p class="text-slate-600 text-sm mb-2">搭乘 Sky Capsule 天空膠囊列車 → 青沙浦</p>
+                        <a href="https://www.bluelinepark.com/eng/booking.do" target="_blank" class="inline-block bg-rose-50 text-rose-600 text-xs px-3 py-1 rounded border border-rose-200 hover:bg-rose-100">
+                            <i class="fa-solid fa-link mr-1"></i> 預約連結
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-orange-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-orange-600 font-bold text-sm block mb-1">12:30 • 午餐</span>
+                        <h3 class="font-bold text-lg mb-1">青沙浦烤貝村</h3>
+                        <p class="text-slate-600 text-sm">秀敏家 (수민이네) 炭火烤扇貝 + 海鮮拉麵</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-cyan-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-cyan-600 font-bold text-sm block mb-1">14:00 • 景點</span>
+                        <h3 class="font-bold text-lg">海東龍宮寺 & Skyline Luge</h3>
+                        <p class="text-slate-600 text-sm mb-1">先看海邊寺廟，再去玩斜坡滑車(建議玩3次)。</p>
+                        <p class="text-xs text-slate-400">*皆在同一區域，步行可達</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-indigo-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 border-l-4 border-l-indigo-400">
+                        <span class="text-indigo-600 font-bold text-sm block mb-1">16:30 • 購物</span>
+                        <h3 class="font-bold text-lg">樂天 Premium Outlet 東釜山</h3>
+                        <p class="text-slate-600 text-sm mb-2">希臘風建築，超大超好逛。</p>
+                        <ul class="text-xs text-slate-500 list-disc list-inside">
+                            <li>Luge 對面，過馬路即達</li>
+                            <li>1F 有樂天超市 (Lotte Mart) 可買零食</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative pl-8">
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-orange-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-orange-600 font-bold text-sm block mb-1">19:30 • 晚餐</span>
+                        <h3 class="font-bold text-lg">伍班長烤肉 / 味贊王</h3>
+                        <p class="text-slate-600 text-sm">搭 Uber 回海雲台吃烤肉。</p>
+                        <p class="text-xs text-red-400 mt-1"><i class="fa-solid fa-triangle-exclamation"></i> 建議先抽號碼牌</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 3 -->
+        <section id="day3" class="mb-12 scroll-mt-24">
+            <div class="flex items-center mb-6">
+                <div class="bg-blue-600 text-white font-bold w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-lg shadow-blue-200">D3</div>
+                <div class="ml-4">
+                    <h2 class="text-xl font-bold text-slate-800">移動與文化村</h2>
+                    <p class="text-slate-500 text-sm">3/13 (四) • 西面、甘川洞、松島</p>
+                </div>
+            </div>
+            
+            <div class="space-y-0 relative">
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-gray-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-gray-600 font-bold text-sm block mb-1">10:30 • 移動</span>
+                        <h3 class="font-bold text-lg">退房前往西面</h3>
+                        <p class="text-slate-500 text-sm">搭 Uber 至 Browndot Business Seomyeon 寄放行李。</p>
+                    </div>
+                </div>
+                
+                 <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-orange-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-orange-600 font-bold text-sm block mb-1">11:30 • 午餐</span>
+                        <h3 class="font-bold text-lg">西面豬肉湯飯一條街</h3>
+                        <p class="text-slate-500 text-sm">推薦：松亭三代 (송정3대국밥)</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-cyan-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-cyan-600 font-bold text-sm block mb-1">13:00 • 景點</span>
+                        <h3 class="font-bold text-lg">甘川洞文化村</h3>
+                        <p class="text-slate-500 text-sm">小王子合照、手翻書體驗。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-cyan-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-cyan-600 font-bold text-sm block mb-1">15:00 • 景點</span>
+                        <h3 class="font-bold text-lg">松島海上纜車 & 龍宮雲橋</h3>
+                        <p class="text-slate-500 text-sm">搭乘水晶車廂。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-teal-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-teal-600 font-bold text-sm block mb-1">17:00 • 夕陽</span>
+                        <h3 class="font-bold text-lg">白淺灘文化村 (影島)</h3>
+                        <p class="text-slate-500 text-sm">前往足浴咖啡廳 (View High) 看夕陽。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative pl-8">
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-orange-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-orange-600 font-bold text-sm block mb-1">19:00 • 晚餐</span>
+                        <h3 class="font-bold text-lg">富平罐頭市場 / 札嘎其</h3>
+                        <p class="text-slate-500 text-sm">巨人炸雞或海鮮料理。逛樂天百貨光復店。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Day 4 -->
+        <section id="day4" class="mb-12 scroll-mt-24">
+            <div class="flex items-center mb-6">
+                <div class="bg-blue-600 text-white font-bold w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-lg shadow-blue-200">D4</div>
+                <div class="ml-4">
+                    <h2 class="text-xl font-bold text-slate-800">白色情人節</h2>
+                    <p class="text-slate-500 text-sm">3/14 (五) • 廣安里、西面逛街</p>
+                </div>
+            </div>
+            
+            <div class="bg-pink-50 border border-pink-100 rounded-lg p-3 mb-4 flex items-start">
+                <i class="fa-solid fa-heart text-pink-500 mt-1 mr-2"></i>
+                <div class="text-sm text-pink-700">今天是白色情人節，加上週五晚上，餐廳非常熱門！建議晚餐 17:30 前往，或 20:30 後吃宵夜。</div>
+            </div>
+
+            <div class="space-y-0 relative">
+                 <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-cyan-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-cyan-600 font-bold text-sm block mb-1">11:00 • 景點</span>
+                        <h3 class="font-bold text-lg">廣安里海水浴場</h3>
+                        <p class="text-slate-500 text-sm">看廣安大橋，Millac the Market 吃午餐。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="timeline-line"></div>
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-purple-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-purple-600 font-bold text-sm block mb-1">15:00 • 下午茶</span>
+                        <h3 class="font-bold text-lg">田浦咖啡街</h3>
+                        <p class="text-slate-500 text-sm">西面商圈逛街、拍貼機。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item relative pl-8">
+                    <div class="absolute left-2 top-2 w-4 h-4 bg-orange-500 rounded-full border-4 border-slate-50 z-10 transform -translate-x-1/2"></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-orange-600 font-bold text-sm block mb-1">17:30 / 20:30 • 晚餐</span>
+                        <h3 class="font-bold text-lg">開味吉 (辣炒章魚)</h3>
+                        <p class="text-slate-500 text-sm">或 西面烤腸一條街。避開尖峰時段。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 5 & 6 Short List -->
+        <section id="day5" class="mb-8 scroll-mt-24">
+             <div class="flex items-center mb-6">
+                <div class="bg-blue-600 text-white font-bold w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-lg shadow-blue-200">D5</div>
+                <div class="ml-4">
+                    <h2 class="text-xl font-bold text-slate-800">南浦洞最後衝刺</h2>
+                    <p class="text-slate-500 text-sm">3/15 (六)</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden">
+                <div class="p-4 border-b border-gray-50 flex items-center">
+                    <div class="w-16 font-bold text-gray-500">10:00</div>
+                    <div>早餐：濟州家 (鮑魚粥)</div>
+                </div>
+                <div class="p-4 border-b border-gray-50 flex items-center">
+                    <div class="w-16 font-bold text-gray-500">11:00</div>
+                    <div>龍頭山公園 & 釜山塔</div>
+                </div>
+                <div class="p-4 border-b border-gray-50 flex items-center bg-blue-50">
+                    <div class="w-16 font-bold text-blue-600">14:00</div>
+                    <div class="font-bold text-blue-800">必看：影島大橋開橋 (週六限定)</div>
+                </div>
+                <div class="p-4 border-b border-gray-50 flex items-center">
+                    <div class="w-16 font-bold text-gray-500">15:00</div>
+                    <div>BIFF 廣場、Olive Young 補貨</div>
+                </div>
+                <div class="p-4 flex items-center">
+                    <div class="w-16 font-bold text-gray-500">18:30</div>
+                    <div>晚餐：Outdark 炸雞 (西面店)</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="day6" class="mb-12 scroll-mt-24">
+            <div class="flex items-center mb-6">
+               <div class="bg-blue-600 text-white font-bold w-12 h-12 rounded-xl flex items-center justify-center text-xl shadow-lg shadow-blue-200">D6</div>
+               <div class="ml-4">
+                   <h2 class="text-xl font-bold text-slate-800">返程</h2>
+                   <p class="text-slate-500 text-sm">3/16 (日)</p>
+               </div>
+           </div>
+           <div class="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden">
+               <div class="p-4 border-b border-gray-50 flex items-center">
+                   <div class="w-16 font-bold text-gray-500">09:30</div>
+                   <div>早午餐：Brunch Ga</div>
+               </div>
+               <div class="p-4 border-b border-gray-50 flex items-center">
+                   <div class="w-16 font-bold text-gray-500">11:00</div>
+                   <div>最後補貨：NC 百貨 / 樂天免稅</div>
+               </div>
+               <div class="p-4 border-b border-gray-50 flex items-center">
+                   <div class="w-16 font-bold text-gray-500">12:30</div>
+                   <div>搭 Uber 前往機場</div>
+               </div>
+               <div class="p-4 flex items-center bg-gray-50">
+                   <div class="w-16 font-bold text-gray-500">15:45</div>
+                   <div>✈️ BR1193 起飛</div>
+               </div>
+           </div>
+       </section>
+
+        <!-- Accommodations / Info -->
+        <section id="info" class="scroll-mt-24">
+            <h2 class="text-2xl font-bold mb-4 text-slate-800"><i class="fa-solid fa-circle-info mr-2 text-amber-500"></i>重要資訊</h2>
+            
+            <div class="grid gap-4">
+                <!-- Hotel 1 -->
+                <div class="bg-white p-5 rounded-xl shadow-md border-l-4 border-l-blue-500">
+                    <h3 class="font-bold text-lg">海雲台中心酒店 (D1-D2)</h3>
+                    <p class="text-sm text-gray-500 mb-2">Haeundae Centum Hotel</p>
+                    <div class="bg-gray-100 p-3 rounded-lg flex justify-between items-center">
+                        <div class="text-sm text-gray-800 font-medium" id="addr1">부산 해운대구 센텀3로 20</div>
+                        <button onclick="copyToClipboard('addr1')" class="ml-2 bg-white px-3 py-1 rounded shadow-sm text-xs font-bold text-blue-600 active:bg-blue-50">複製</button>
+                    </div>
+                </div>
+
+                <!-- Hotel 2 -->
+                <div class="bg-white p-5 rounded-xl shadow-md border-l-4 border-l-purple-500">
+                    <h3 class="font-bold text-lg">西面棕點商務飯店 (D3-D5)</h3>
+                    <p class="text-sm text-gray-500 mb-2">Browndot Business Seomyeon</p>
+                    <div class="bg-gray-100 p-3 rounded-lg flex justify-between items-center">
+                        <div class="text-sm text-gray-800 font-medium" id="addr2">부산 부산진구 서면로 25</div>
+                        <button onclick="copyToClipboard('addr2')" class="ml-2 bg-white px-3 py-1 rounded shadow-sm text-xs font-bold text-blue-600 active:bg-blue-50">複製</button>
+                    </div>
+                </div>
+
+                <!-- Checklist -->
+                <div class="bg-amber-50 p-5 rounded-xl border border-amber-100">
+                    <h3 class="font-bold text-amber-800 mb-2">行前檢查清單</h3>
+                    <ul class="text-sm text-amber-900 space-y-2">
+                        <li><input type="checkbox" class="mr-2"> 膠囊列車預約 (3/12 上午)</li>
+                        <li><input type="checkbox" class="mr-2"> 下載 Naver Map & Kakao T</li>
+                        <li><input type="checkbox" class="mr-2"> 準備 Visit Busan Pass (若有購買)</li>
+                        <li><input type="checkbox" class="mr-2"> 護照 & 網卡/漫遊</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-8 text-slate-400 text-xs">
+        <p>Busan Trip 202X • Have a nice trip!</p>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-4 py-2 rounded-full shadow-lg text-sm opacity-0 transition-opacity duration-300 pointer-events-none z-50">
+        已複製地址！
+    </div>
+
+    <script>
+        // Smooth Scroll
+        function scrollToDay(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                // Adjust for sticky header
+                const y = element.getBoundingClientRect().top + window.pageYOffset - 100;
+                window.scrollTo({top: y, behavior: 'smooth'});
+            }
+        }
+
+        // Copy Address
+        function copyToClipboard(elementId) {
+            const text = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                showToast();
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+
+        function showToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.remove('opacity-0');
+            setTimeout(() => {
+                toast.classList.add('opacity-0');
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
